@@ -1,8 +1,9 @@
-app/design/adminhtml/default/default/template/shariff   app/design/adminhtml/default/default/template/shariff
-app/design/frontend/base/default/layout/shariff.xml     app/design/frontend/base/default/layout/shariff.xml
-app/design/frontend/base/default/template/shariff       app/design/frontend/base/default/template/shariff
-app/etc/modules/Bds_Shariff.xml                         app/etc/modules/Bds_Shariff.xml
-app/code/local/Bds/Shariff                              app/code/local/Bds/Shariff
-skin/frontend/base/default/css/shariff                  skin/frontend/base/default/css/shariff
-skin/frontend/base/default/js/shariff                   skin/frontend/base/default/js/shariff
-skin/frontend/base/default/images/shariff               skin/frontend/base/default/images/shariff
+app/design/adminhtml/default/default/template/shariff               app/design/adminhtml/default/default/template/shariff
+app/design/frontend/base/default/layout/shariff.xml                 app/design/frontend/base/default/layout/shariff.xml
+app/design/frontend/base/default/template/shariff                   app/design/frontend/base/default/template/shariff
+app/design/frontend/base/default/template/page/html/footerjs.phtml  app/design/frontend/base/default/template/page/html/footerjs.phtml
+app/etc/modules/Bds_Shariff.xml                                     app/etc/modules/Bds_Shariff.xml
+app/code/local/Bds/Shariff                                          app/code/local/Bds/Shariff
+skin/frontend/base/default/css/shariff                              skin/frontend/base/default/css/shariff
+skin/frontend/base/default/js/shariff                               skin/frontend/base/default/js/shariff
+skin/frontend/base/default/images/shariff                           skin/frontend/base/default/images/shariff
