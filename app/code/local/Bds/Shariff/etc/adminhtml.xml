@@ -11,9 +11,9 @@
             <children>
               <config>
                 <children>
-                  <bds_shariff>
+                  <bds>
                     <title>Shariff Extension Setting</title>
-                  </bds_shariff>
+                  </bds>
                 </children>
               </config>
             </children>

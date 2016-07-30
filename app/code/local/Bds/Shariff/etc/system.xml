@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
+    <tabs>
+        <bds translate="label" module="shariff">
+            <label>Sharethis Extension</label>
+            <sort_order>500</sort_order>
+        </bds>
+    </tabs>
     <sections>
-        <bds_shariff translate="label" module="general">
+        <bds_shariff translate="label" module="shariff">
             <label>Shariff Extension Setting</label>
             <tab>bds</tab>
             <sort_order>1000</sort_order>
@@ -9,7 +15,7 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <bds_shariff_group translate="label" module="general">
+                <bds_shariff_group translate="label" module="shariff">
                     <label>Shariff Basic Setting</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>1000</sort_order>
@@ -107,7 +113,7 @@
                         </bds_shariff_products>
                     </fields>
                 </bds_shariff_group>
-                <bds_shariff_design translate="label" module="general">
+                <bds_shariff_design translate="label" module="shariff">
                     <label>Shariff Design Setting</label>
                     <frontend_type>text</frontend_type>
                     <sort_order>2000</sort_order>
