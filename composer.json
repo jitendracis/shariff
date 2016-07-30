@@ -1,0 +1,31 @@
+{
+    "name": "jitendracis/shariff",
+    "type": "magento-module",
+    "description": "Shariff Button Extension",
+    "authors": [
+        {
+            "name": "Jitendra Mandloi",
+            "email": "jitendra.m@cisinlabs.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer":"*"
+    },
+    "extra": {
+        "magento-root-dir": "./",
+        "magento-deploystrategy": "link",
+        "map": [
+          ["./app/design/adminhtml/default/default/template/shariff", "./app/design/adminhtml/default/default/template/shariff"],
+          ["./app/design/frontend/base/default/layout/shariff.xml", "./app/design/frontend/base/default/layout/shariff.xml"],
+          ["./app/design/frontend/base/default/template/shariff", "./app/design/frontend/base/default/template/shariff"],
+          ["./app/etc/modules/Bds_Shariff.xml", "./app/etc/modules/Bds_Shariff.xml"],
+          ["./app/code/local/Bds/Shariff", "./app/code/local/Bds/Shariff"],
+          ["./skin/frontend/base/default/css/shariff", "./skin/frontend/base/default/css/shariff"],
+          ["./skin/frontend/base/default/js/shariff", "./skin/frontend/base/default/js/shariff"],
+          ["./skin/frontend/base/default/images/shariff", "./skin/frontend/base/default/images/shariff"]
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

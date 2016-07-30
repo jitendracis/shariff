@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default module="page">
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/shariff/shariff.css</stylesheet></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="page/html_head" name="footerjs" template="page/html/footerjs.phtml">
+                <action method="addItem"><type>skin_js</type><name>js/shariff/shariff-min.js</name></action>
+            </block>
+        </reference>
+    </default>
+    <cms_page>
+        <reference name="content">
+            <block type="shariff/shariff" before="page_content_heading" name="shariff_top" template="shariff/shariff_top.phtml"/>
+            <block type="shariff/shariff" after="-" name="shariff_bottom" template="shariff/shariff_bottom.phtml"/>
+        </reference>
+    </cms_page>
+    <catalog_product_view>
+        <reference name="content">
+            <block type="shariff/shariff" before="-" name="shariff_product_top" template="shariff/shariff_product_top.phtml"/>
+            <block type="shariff/shariff" after="-" name="shariff_product_bottom" template="shariff/shariff_product_bottom.phtml"/>
+        </reference>
+    </catalog_product_view>
+</layout>

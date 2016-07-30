@@ -1,0 +1,15 @@
+<?php
+$store = Mage::helper('shariff')->checkStore();
+$status = Mage::helper('shariff')->checkStatus();
+$cms_page_status = Mage::helper('shariff')->checkCmsPageStatus();
+$shariff_services_status = Mage::helper('shariff')->shariffSerivcesStatus("status");
+$shariff_services = Mage::helper('shariff')->shariffSerivcesStatus("services");
+$shariff_language = Mage::helper('shariff')->shariffLanguage($store->getLocaleCode());
+$shariff_design = Mage::helper('shariff')->shariffDesign();
+$shariff_designposition = Mage::helper('shariff')->shariffDesignPosition();
+if($status){
+    if($cms_page_status){
+?>
+    <div class="shariff" <?php if($shariff_services_status != ''){ ?>data-services='[<?php echo $shariff_services ; ?>]'<?php } ?> data-lang="<?php echo $shariff_language ; ?>" data-theme="<?php echo $shariff_design ; ?>" data-orientation="<?php echo $shariff_designposition ; ?>"></div>
+<?php } } ?>
+

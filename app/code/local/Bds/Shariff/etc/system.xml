@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <bds_shariff translate="label" module="general">
+            <label>Shariff Extension Setting</label>
+            <tab>bds</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <bds_shariff_group translate="label" module="general">
+                    <label>Shariff Basic Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <bds_shariff_enable translate="label">
+                            <label>Enable Shariff Extension:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                  
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bds_shariff_enable>
+                        <bds_shariff_service translate="label">
+                            <label>Enable the following services in the provided order:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>
+                                <![CDATA[addthis|facebook|flattr|googleplus|linkedin|pinterest|reddit|stumbleupon|xing
+                                Use the pipe sign | between two or more services.]]>
+                            </comment>
+                        </bds_shariff_service>
+                        <bds_shariff_cmspage_enable translate="label">
+                            <label>Enable shariff buttons for CMS Pages:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                  
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>
+                                <![CDATA[Note: Enable to show Shariff button on CMS pages.<br />
+                                If you want to add Shariff Button on between the content of CMS page then please paste this code {{block type="core/template" template="shariff/shariff_cmspage.phtml"}}]]>
+                            </comment>
+                        </bds_shariff_cmspage_enable>
+                        <bds_shariff_cmspage_top translate="label">
+                            <label>Add the Shariff buttons before all CMS pages:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                  
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bds_shariff_cmspage_top>
+                        <bds_shariff_cmspage_bottom translate="label">
+                            <label>Add the Shariff buttons after all CMS pages:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                  
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bds_shariff_cmspage_bottom>
+                        <bds_shariff_cmspages translate="label">
+                            <label>Shariff button on CMS pages:</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>shariff/system_config_source_cmspage</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>
+                                Select CMS pages on which you want to show Shariff buttons.
+                            </comment>
+                        </bds_shariff_cmspages>
+                        <bds_shariff_staticblock translate="label">
+                            <label>Enable shariff buttons for Static blocks:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                  
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>
+                                <![CDATA[Note: Enable to show Shariff button on Static block.<br />
+                                Please paste this code {{block type="core/template" template="shariff/shariff_staticblock.phtml"}} on static block where you want Shariff Button.]]>
+                            </comment>
+                        </bds_shariff_staticblock>
+                        <bds_shariff_products translate="label">
+                            <label>Enable shariff buttons for Product Detail Page:</label>
+                            <frontend_model>shariff/adminhtml_system_config_product</frontend_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>
+                                <![CDATA[Note: Shariff button will be show on top of product detail page and bottom of product detail.]]>
+                            </comment>
+                        </bds_shariff_products>
+                    </fields>
+                </bds_shariff_group>
+                <bds_shariff_design translate="label" module="general">
+                    <label>Shariff Design Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <bds_shariff_design translate="label">
+                            <label>Shariff button design:</label>
+                            <frontend_type>radios</frontend_type>
+                            <source_model>shariff/system_config_source_design</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bds_shariff_design>
+                        <bds_shariff_vertical translate="label">
+                            <label>Shariff button orientation vertical:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>shariff/system_config_source_verticle</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </bds_shariff_vertical>
+                    </fields>
+                </bds_shariff_design>
+            </groups>
+        </bds_shariff>
+    </sections>
+</config>
